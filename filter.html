@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <p>Um array com apenas alguns itens</p>
+    <p>Exemplo: números só maiores que 37</p>
+    <script>
+
+    /*
+    const randomNumbers = [36, 99, 37, 63]
+
+    const numbersGreaterThan37 = randomNumbers.filter(item => item > 37)
+
+    console.log({ numbersGreaterThan37, randomNumbers })
+    */
+
+    const users = [
+        { name: 'Ada Lovelace', premium: true },
+        { name: 'Grace Hopper', premium: false },
+        { name: 'Alan Turing', premium: true },
+        { name: 'Linus Torvalds', premium: false },
+        { name: 'Margaret Hamilton', premium: true }
+    ]
+    
+    const premiumUser = users.filter(user => user.premium)
+
+    console.log(premiumUser)
+
+    /*
+        Exercicios
+        https://github.com/Roger-Melo/exercicios-semana-do-js
+
+    */
+    </script>
+</body>
+</html>
